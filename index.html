@@ -5,9 +5,427 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linkedln</title>
     <link rel="stylesheet" href="src/output.css">
+    <!-- le lien des icones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
-<body>
-    <p class="m-2 text-blue-500">maurice</p>
+<body class="m-0 p-0 box-border">
+    <main class="h-screen w-full bg-slate-50 font-police">
+
+        <!-- la  navbar -->
+        <nav class="bg-white fixed w-full">
+            <div class="flex px-28 items-center">
+                <div class="flex items-center"> 
+                    <div class="">
+                        <i class='bx bxl-linkedin-square  text-blue-600 text-5xl'></i>
+                    </div>
+                    <div class="">
+                        <input class="px-4 py-1.5 bg-slate-100 rounded-md w-72" type="search" name="search" id="" placeholder="Recherche">
+                    </div>
+                </div>
+                <!-- les icones -->
+                <div class="flex justify-end w-full">
+                    <div class="mx-3">
+                        <div class="flex justify-center">
+                            <i class='bx bxs-home text-3xl'></i>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Acceuil</p>
+                    </div>
+
+                    <div class="mx-4">
+                        <div class="flex justify-center">
+                            <i class='bx bxs-grid-alt text-3xl text-gray-500'></i>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Reseau</p>
+                    </div>
+
+                    <div class="mx-3">
+                        <div class="flex justify-center">
+                            <i class='bx bxs-briefcase text-3xl text-gray-500 '></i>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Offres d'emplois</p>
+                    </div>
+
+                    <div class="mx-2">
+                        <div class="flex justify-center">
+                            <i class='bx bxs-message-rounded-dots text-3xl text-gray-500'></i>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Messagerie</p>
+                    </div>
+
+                    <div class="mx-2">
+                        <div class="flex justify-center">
+                            <i class='bx bxs-bell text-3xl text-gray-500'></i>
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Notification</p>
+                    </div>
+
+                    <div class="mx-2">
+                        <div class="flex justify-center">
+                            <img class="h-8 rounded-full" src="Img/profil.jpeg" alt="">
+                        </div>
+                        <p class="text-sm text-gray-500 font-light">Vous <i class='bx bxs-down-arrow'></i></p>
+                    </div>
+
+                    <!-- apres les icones -->
+
+                    <div class="flex ml-8">
+
+                        <div class="font-light">
+                            <div class="flex justify-center">
+                               
+                                <i class='bx bxs-grid text-3xl text-gray-500'></i>
+                            </div>
+                            <p class="text-sm text-gray-500 font-light">Pour Les Entreprises <i class='bx bxs-down-arrow'></i> </p>
+                        </div>
+    
+                        <div class="ml-2">
+                            <div class="flex justify-center">
+                                <i class='bx bxs-bell text-3xl text-gray-500'></i>
+                            </div>
+                            <p class="text-sm text-gray-500 font-light">Testez les Salles</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+        </nav>
+
+        <!-- le  .... -->
+        <section class="px-28 grid grid-cols-gidlinked gap-4 pt-16">
+
+            <div class="rounded-lg h-[85vh]">
+                
+                <div class="border rounded-xl mb-4">
+                    <div class="bg-gray-300 rounded-t-lg h-20">
+                        <div class="flex justify-center pt-10">
+                            <img src="Img/profil.jpeg" 
+                            class="h-24 border-2 rounded-full" alt="">
+                        </div>
+                    </div> 
+
+                    <div class="pt-10 bg-white border rounded-b-lg">
+                        
+                        <div class="my-4">
+                            <a href="http://127.0.0.1:5500/index.html" class="flex justify-center text-md hover:underline">Maurice Miema</a>
+                            <p class="flex justify-center font-light text-sm text-gray-400"> A étudié à Université de Lubumbashi </p>
+                        </div>
+                        <hr>
+
+                        <div class="py-2">
+                    
+                            <div class="flex px-4 py-1 hover:bg-gray-200">
+                                <div class="w-1/2">
+                                    <p class="font-light text-sm text-gray-400">Vue de Profil</p>
+                                </div>
+    
+                                <div class="flex justify-end w-1/2">
+                                    <p class=" text-sm text-blue-800">400</p>
+                                </div>
+                            </div>
+    
+                            <div class=" px-4 py-1 hover:bg-gray-200">
+                                <div class="flex">
+                                    <div class="w-1/2">
+                                        <p class="font-light text-sm text-gray-400">Relations</p>
+                                    </div>
+        
+                                    <div class="flex justify-end w-1/2">
+                                        <p class=" text-sm text-blue-800">63</p>
+                                    </div>
+                                </div>
+                                <h1>Developpez votre reseau</h1>
+                            </div>
+    
+                            <hr>
+                        </div>
+
+                        <div class="text-sm px-2 hover:bg-gray-200 py-2">
+                            <a href="#">
+                                <p class="font-light">Atteignez vos objectifs Professionels</p>
+                                <p class="flex justify-center font-light hover:text-blue-600">Essayez Premium pour 0 USD</p>
+                            </a>
+    
+                            <hr>
+                        </div>
+
+                        <div class="px-4 text-gray-600 hover:bg-gray-200 py-2">
+                            <a href="#" class="flex">
+                                <i class='bx bxs-bookmark-minus text-2xl'></i>
+                                <p class="ml-4">Elements Enregistrer</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- les groupes -->
+
+                <div class="border bg-white rounded-lg">
+                    <div class="px-4">
+                        <div class="text-blue-700 font-light py-1 hover:underline">
+                            <a href="#">Groupes</a>
+                        </div>
+
+                        <div class="flex items-center text-blue-700 font-light  py-1 ">
+                            <div class="w-1/2 hover:underline">
+                                <a href="#">Groupes</a>
+                            </div>
+
+                            <div class="flex justify-end w-1/2">
+                                <i class='bx bx-plus hover:bg-slate-200 p-1 rounded-full font-bold text-2xl text-gray-600'></i>
+                            </div>
+                           
+                        </div>
+
+                        <div class="text-blue-600 font-light py-1 hover:underline">
+                            <a href="#">Groupes</a>
+                        </div>
+                    </div>
+
+                    <div class="px-4 text-gray-600 hover:bg-gray-200 py-2">
+                        <a href="#" class="flex">
+                            <p class="ml-4">En decouvrir plus</p>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <!-- le grid du milieu -->
+
+            <div class="h-[88vh] overflow-y-scroll scrollbar scrollbar-thumb-slate-50">  
+
+                <div class="border py-2 px-3 rounded-xl bg-white">
+                    <div class="flex">
+                        <img class="h-14 rounded-full " src="Img/profil.jpeg" alt="Profile">
+                        <button class="border ml-2 rounded-full  w-full">post</button>
+                    </div>
+
+                    <div class="mt-2 px-3 flex justify-between">
+
+                        <div class=" hover:bg-gray-300  px-3 py-3 rounded-lg">
+                            <a href="#" class="flex items-center ">
+                                <i class='bx bxs-image text-blue-700 text-2xl'></i> 
+                                <p class="ml-2 text-gray-600">Medias</p>
+                            </a>
+                        </div>
+
+                        <div class=" hover:bg-gray-300  px-3 py-3 rounded-lg">
+                            <a href="#" class="flex items-center ">
+                                <i class='bx bx-calendar text-orange-600 text-2xl'></i> 
+                                <p class="ml-2 text-gray-600">Evenement</p>
+                            </a>
+                        </div>
+
+                        <div class=" hover:bg-gray-300  px-3 py-3 rounded-lg">
+                            <a href="#" class="flex items-center ">
+                                <i class='bx bx-edit text-orange-600 text-2xl'></i> 
+                                <p class="ml-2 text-gray-600"> Rediger un Article</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="my-2 flex items-center">
+                    <div class="h-[1px] bg-gray-400 w-80">
+                        
+                    </div>
+                    <div class="ml-2 ">
+                        <button type="button" class="flex items-center text-sm">
+                            <p class="font-light text-gray-500">classer par :</p>
+                            <h1>Pertinence <i class='bx bxs-chevron-down'></i></h1>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- la partie de publication -->
+                <div class="border rounded-lg bg-white mb-4 pb-4">
+
+                    <div class="px-4 py-2">
+                        <div class="flex">
+                            <div class="">
+                                <img class="h-14 rounded-full" src="Img/gedeon.jpeg" alt="">
+                            </div>
+
+                            <div class="ml-2">
+                                <h1>Gedeon Mabengi. <span class="font-light text-sm text-gray-500">Abonné</span></h1>
+                                <h1>----</h1>
+                                <h1 class="text-sm font-light text-gray-500">2. sem. <span><i class='bx bx-globe'></i></span></h1>
+                            </div>
+
+                        </div>
+
+                        <p>csdsfdghgnbijnkm</p>
+                    </div>
+
+                    <!-- pub -->
+                    <div class="px-0">
+                        
+                        <img src="Img/1721467630432.jpeg" alt="">
+
+                    </div>
+
+                </div>
+
+
+                <!-- la partie de publication -->
+                <div class="border rounded-lg bg-white mb-4 pb-4">
+
+                    <div class="px-4 py-2">
+                        <div class="flex">
+                            <div class="">
+                                <img class="h-14 rounded-full" src="Img/gedeon.jpeg" alt="">
+                            </div>
+
+                            <div class="ml-2">
+                                <h1>Gedeon Mabengi. <span class="font-light text-sm text-gray-500">Abonné</span></h1>
+                                <h1>----</h1>
+                                <h1 class="text-sm font-light text-gray-500">2. sem. <span><i class='bx bx-globe'></i></span></h1>
+                            </div>
+
+                        </div>
+
+                        <p>csdsfdghgnbijnkm</p>
+                    </div>
+
+                    <!-- pub -->
+                    <div class="px-0">
+                        
+                        <img src="Img/1721467630432.jpeg" alt="">
+
+                    </div>
+
+                </div>
+
+
+                <!-- la partie de publication -->
+                <div class="border rounded-lg bg-white mb-4 pb-4">
+
+                    <div class="px-4 py-2">
+                        <div class="flex">
+                            <div class="">
+                                <img class="h-14 rounded-full" src="Img/gedeon.jpeg" alt="">
+                            </div>
+
+                            <div class="ml-2">
+                                <h1>Gedeon Mabengi. <span class="font-light text-sm text-gray-500">Abonné</span></h1>
+                                <h1>----</h1>
+                                <h1 class="text-sm font-light text-gray-500">2. sem. <span><i class='bx bx-globe'></i></span></h1>
+                            </div>
+
+                        </div>
+
+                        <p>csdsfdghgnbijnkm usriourpjjo  dkhfiodl</p>
+                    </div>
+
+                    <!-- pub -->
+                    <div class="px-0">
+                        
+                        <img src="Img/1721467630432.jpeg" alt="">
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <!-- la collone de gauche -->
+            <div class="h-[85vh]">
+                <div class="px-3 py-4 border-2  rounded-lg bg-white">
+                    <div class="">
+                        <h1 class="items-center">Ajoutez à votre fil d’actualité
+                            <span class="">
+                                <i class='bx bx-question-mark'></i>
+                            </span>
+                        </h1>
+                    </div>
+
+
+                    <div class="mt-4">
+                        <div class="flex mb-4">
+                            <div class="">
+                                <img  class="h-14 rounded-full" src="Img/Loic.jpeg" alt="">
+                            </div>
+    
+                            <div class="ml-2">
+                                <h1 class="text-lg">Loic Hounkpatin</h1>
+                                <p class="text-gray-500 text-sm font-light">FrontEnd Developer (Vue.js & Next.js) <br> Conception de site de d'application web </p>
+
+                                <button type="button" class="border border-black rounded-full px-5 py-1 mt-2 flex items-center">
+                                    <i class='bx bx-plus text-xl'></i>
+                                     Suivre
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex mb-4">
+                            <div class="">
+                                <img  class="h-14 rounded-full" src="Img/gloire.jpeg" alt="">
+                            </div>
+    
+                            <div class="ml-2">
+                                <h1 class="text-lg">Gloire Kafwalubi</h1>
+                                <p class="text-gray-500 text-sm font-light">Sofware Engineer | PHP - Symfony | <br> Js-Next-js - Angular | AWS<br></p>
+
+                                <button type="button" class="border border-black rounded-full px-5 py-1 mt-2 flex items-center">
+                                    <i class='bx bx-plus text-xl'></i>
+                                     Suivre
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex mb-2">
+                            <div class="">
+                                <img  class="h-14 rounded-full" src="Img/kadea.jpeg" alt="">
+                            </div>
+    
+                            <div class="ml-2">
+                                <h1 class="text-lg">Kadea Academy</h1>
+                                <p class="text-gray-500 text-sm font-light">Entreprise . Enseignement Superieur <br></p>
+
+                                <button type="button" class="border border-black rounded-full px-5 py-1 mt-2 flex items-center">
+                                    <i class='bx bx-plus text-xl'></i>
+                                     Suivre
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="#" class="hover:bg-gray-400 p-1">
+                            Voir toutes les suggestions 
+                            <i class='bx bx-right-arrow-alt text-xl '></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+
 </body>
 </html>
