@@ -8,7 +8,8 @@ module.exports = {
       },
 
       gridTemplateColumns:{
-        gidlinked:"2fr 4fr 2.5fr"
+        gidlinked:"2fr 4fr 2.5fr",
+        gridsm: "1fr"
       },
     },
   },

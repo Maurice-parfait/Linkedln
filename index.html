@@ -10,12 +10,13 @@
     <!-- npx tailwindcss -i ./CSS/Style.css -o ./src/output.css --watch -->
 </head>
 <body class="m-0 p-0 box-border">
-    <main class="h-screen w-full bg-slate-50 font-police">
+    <main class="h-screen w-full bg-slate-50 font-police"> 
 
         <!-- la  navbar -->
-        <nav class="bg-white fixed w-full">
-            <div class="flex px-28 items-center">
-                <div class="flex items-center"> 
+        <nav class="bg-white fixed w-full max-sm:absolute max-sm:top-[93%] max-sm:w-full">
+
+            <div class="flex px-28 items-center max-sm:px-2">
+                <div class="flex items-center max-sm:hidden"> 
                     <div class="">
                         <i class='bx bxl-linkedin-square  text-blue-600 text-5xl'></i>
                     </div>
@@ -23,53 +24,67 @@
                         <input class="px-4 py-1.5 bg-slate-100 rounded-md w-72" type="search" name="search" id="" placeholder="Recherche">
                     </div>
                 </div>
+
                 <!-- les icones -->
-                <div class="flex justify-end w-full">
-                    <div class="mx-3">
+
+                <div class="flex justify-end w-full max-sm:flex max-sm:justify-center">
+                    <div class="mx-3 max-sm:mx-1 max-sm:font-light">
                         <div class="flex justify-center">
-                            <i class='bx bxs-home text-3xl'></i>
+                            <i class='bx bxs-home text-3xl max-sm:text-xl'></i>
                         </div>
                         <p class="text-sm text-gray-500 font-light">Acceuil</p>
                     </div>
 
-                    <div class="mx-4">
+                    <div class="mx-4 max-sm:mx-1">
                         <div class="flex justify-center">
-                            <i class='bx bxs-grid-alt text-3xl text-gray-500'></i>
+                            <i class='bx bxs-grid-alt text-3xl text-gray-500 max-sm:text-xl'></i>
                         </div>
                         <p class="text-sm text-gray-500 font-light">Reseau</p>
                     </div>
 
-                    <div class="mx-3">
+                    <div class="mx-3 max-sm:mx-1 max-sm:hidden">
                         <div class="flex justify-center">
-                            <i class='bx bxs-briefcase text-3xl text-gray-500 '></i>
+                            <i class='bx bxs-briefcase text-3xl text-gray-500 max-sm:text-xl'></i>
                         </div>
-                        <p class="text-sm text-gray-500 font-light">Offres d'emplois</p>
+                        <p class="text-sm text-gray-500 font-light max-sm:hidden">Offres d'emplois</p>
+                        <p class="hidden text-sm text-gray-500 font-light max-sm:block">Emplois</p>
                     </div>
 
-                    <div class="mx-2">
+                    <!-- reposive post -->
+
+                    <div class="mx-2 hidden max-sm:block" id="postrespon">
                         <div class="flex justify-center">
-                            <i class='bx bxs-message-rounded-dots text-3xl text-gray-500'></i>
+                            <i class='bx bxs-plus-square text-5xl text-gray-500 max-sm:text-xl'></i>
+                        </div>
+                        <p class="hidden text-sm text-gray-500 font-light max-sm:block">Post</p>
+                    </div>
+
+                    <!-- le fin -->
+
+                    <div class="mx-2 max-sm:mx-1">
+                        <div class="flex justify-center">
+                            <i class='bx bxs-message-rounded-dots text-3xl text-gray-500 max-sm:text-xl'></i>
                         </div>
                         <p class="text-sm text-gray-500 font-light">Messagerie</p>
                     </div>
 
-                    <div class="mx-2">
+                    <div class="mx-2 max-sm:mx-0">
                         <div class="flex justify-center">
-                            <i class='bx bxs-bell text-3xl text-gray-500'></i>
+                            <i class='bx bxs-bell text-3xl text-gray-500 max-sm:text-xl'></i>
                         </div>
                         <p class="text-sm text-gray-500 font-light">Notification</p>
                     </div>
 
-                    <div class="mx-2">
+                    <button type="button" class="mx-2 max-sm:hidden" id="btnvous">
                         <div class="flex justify-center">
                             <img class="h-8 rounded-full" src="Img/profil.jpeg" alt="">
                         </div>
                         <p class="text-sm text-gray-500 font-light">Vous <i class='bx bxs-down-arrow'></i></p>
-                    </div>
+                    </button>
 
                     <!-- apres les icones -->
 
-                    <div class="flex ml-8">
+                    <div class="flex ml-8 max-sm:hidden max-sm:ml-0">
 
                         <div class="font-light">
                             <div class="flex justify-center">
@@ -93,10 +108,160 @@
             </div>
         </nav>
 
-        <!-- le  .... -->
-        <section class="px-28 grid grid-cols-gidlinked gap-4 pt-16">
 
-            <div class="rounded-lg h-[85vh]">
+
+        <!--********************** le menu qui doit s'afficher ***********************************************8  -->
+
+        <!-- le menu post responsive -->
+
+        
+        <section class="hidden max-sm:block absolute h-screen w-full bg-black opacity-50">
+
+            <div class="flex">
+
+                <div class="">
+                    
+                </div>
+
+                <div class="">
+                    <img class="h-14 rounded-full" src="Img/profil.jpeg" alt="le profil">
+                </div>
+
+                <div class="">
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- la fon menu post reponsive -->
+
+        <section class="absolute left-1/2 top-14 border bg-white shadow rounded-b-lg rounnded-t-lg hidden" id="menuprofille">
+            
+            <section class="p-3">
+                <section class="flex">
+                    <div class="">
+                        <img class="h-16 rounded-full" src="Img/profil.jpeg" alt="">
+                    </div>
+    
+                    <div class="ml-2">
+                        <h1>Maurice Miema</h1>
+                        <p class="font-light">A étudié à l'université de <br> Lubumbashi</p>
+                    </div>
+                </section>
+
+                <button class="border w-full rounded-xl text-blue-700 font-semibold border-blue-700">Voir le profil</button>
+            </section>
+            <hr>
+
+            <section class="p-3">
+                <h1 class="text-xl mb-2">Commpte</h1>
+
+                <a href="#" class="hover:text-blue-600 text-gray-400 font-ligh">Essayez Premium pendant 1 mois <br> pour 0 USD</a>
+
+                <div class="hover:underline text-gray-400 font-light">
+                    <a href="#">Preferences et confidentialité</a>
+                </div>
+
+                <div class="hover:underline text-gray-400 font-light">
+                    <a href="#">Aide</a>
+                </div>
+
+                <div class="hover:underline text-gray-400 font-light">
+                    <a href="#">Langues</a>
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section class="p-3">
+                <h1 class="text-xl mb-2">Gérer</h1>
+
+                <div class="hover:underline text-gray-400 font-light">
+                    <a href="#">Posts et Activité</a>
+                </div>
+
+                <div class="hover:underline text-gray-400 font-light">
+                    <a href="#">Compte Offres d'emploi</a>
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section class="p-3 font-light">
+
+                <div class="hover:underline text-gray-400">
+                    <a href="#">Deconnection</a>
+                </div>
+            </section>
+
+
+
+
+        </section>
+
+
+        <!-- le menu poste -->
+        <div class="absolute top-0 h-screen w-full bg-black bg-opacity-50 hidden" id="menu">
+
+            <div class="flex justify-center items-center h-screen" >
+                <div class="border px-6 py-4 w-1/2 rounded-xl bg-white">
+
+                    <section class="flex">
+                        <div class="flex items-center p-2 rounded-lg hover:bg-gray-200 w-72 cursor-pointer mb-4">
+                            <div class="">
+                                <img class="h-16 rounded-full" src="Img/profil.jpeg" alt="">
+                            </div>
+    
+                            <div class="ml-4">
+                                <h1 class="text-xl">Maurice Miema <i class='bx bxs-down-arrow text-sm'></i></h1>
+                                <p class="text-sm">Visibilité : Tout le monde</p>
+                            </div>
+    
+                             
+                        </div>
+
+                        <div class="flex justify-end w-1/2 text-4xl ">
+
+                            <button id="closemenu">
+                                <i class='bx bx-x' ></i>
+                            </button>
+                        </div>
+
+                    </section>
+
+
+                    <section>
+                        <textarea class="p-4 w-full text-md focus:outline-none" rows="10" name="" id="textpost" placeholder="De quoi Souhaitez vous Discuter ?"></textarea>
+                    </section>
+
+                    <section class="">
+                        <i class='bx bx-smile font-semibold hover:bg-gray-200 p-2 rounded-full text-xl'></i>
+                    </section>
+
+
+                    <section class="flex justify-end">
+                        <button id="btnpost" class="px-4 py-2 rounded-xl bg-blue-700 text-white cursor-no-drop">Post</button>
+                    </section>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- la fin de menu  -->
+
+
+
+        <!-- le  .... -->
+        <section class="px-28 grid grid-cols-gidlinked gap-4 pt-16 max-sm:px-0 max-sm:pt-1 max-sm:grid-cols-gridsm max-sm:gap-0">
+
+            <!-- le grid a gauche 1.5fr -->
+
+            <div class="rounded-lg h-[85vh] max-sm:absolute max-sm:hidden max-sm:top-10 max-sm:w-full max-sm:bg-gray-400" id="gridgauche">
                 
                 <div class="border rounded-xl mb-4">
                     <div class="bg-gray-300 rounded-t-lg h-20">
@@ -200,14 +365,16 @@
             </div>
 
 
-            <!-- le grid du milieu -->
+            <!-- *************************************le grid du milieu ****************************************-->
 
-            <div class="h-[88vh] overflow-y-scroll scrollbar scrollbar-thumb-slate-50">  
+                
 
-                <div class="border py-2 px-3 rounded-xl bg-white">
+            <div class="h-[88vh] overflow-y-scroll scrollbar scrollbar-thumb-red-500 scrollbar-none max-sm:w-full max-sm:h-[100vh]">  
+
+                <div class="border py-2 px-3 rounded-xl bg-white max-sm:hidden">
                     <div class="flex">
                         <img class="h-14 rounded-full " src="Img/profil.jpeg" alt="Profile">
-                        <button class="border ml-2 rounded-full  w-full">post</button>
+                        <button id="menu-button" class="border ml-2 rounded-full  w-full">post</button>
                     </div>
 
                     <div class="mt-2 px-3 flex justify-between">
@@ -236,7 +403,7 @@
                     </div>
                 </div>
 
-                <div class="my-2 flex items-center">
+                <div class="my-2 flex items-center max-sm:hidden">
                     <div class="h-[1px] bg-gray-400 w-80">
                         
                     </div>
@@ -248,7 +415,28 @@
                     </div>
                 </div>
 
-                <!-- la partie de publication -->
+                <!-- *************************************  la partie de publication ****************************-->
+                
+                <!--  le input de recherche pour le max-sm: en haut-->
+                <div class="hidden max-sm:block max-sm:w-full">
+
+                    <div class="px-2 flex items-center mb-2">
+                        <div class="flex items-center w-1/2">
+                            <img class="h-8 cursor-pointer rounded-full" src="Img/profil.jpeg" id="btnimage" alt="la photo">
+                            <input class="ml-2 border px-4 py-1 w-52 rounded-lg focus:outline-blue-800"  type="search" placeholder="Recherche">
+                        </div>
+
+                        <div class="flex justify-end  w-1/2 ">
+                            <i class='bx bxs-message-rounded-dots text-3xl text-gray-500'></i>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- la fin -->
+
                 <div class="border rounded-lg bg-white mb-4 pb-4">
 
                     <div class="px-4 py-2">
@@ -348,7 +536,7 @@
 
 
             <!-- la collone de gauche -->
-            <div class="h-[85vh]">
+            <div class="h-[85vh] max-sm:hidden">
                 <div class="px-3 py-4 border-2  rounded-lg bg-white">
                     <div class="">
                         <h1 class="items-center">Ajoutez à votre fil d’actualité
@@ -426,6 +614,7 @@
 
 
 
-
+    <!-- le fichier de js -->
+     <script src="script.js"></script>
 </body>
 </html>
