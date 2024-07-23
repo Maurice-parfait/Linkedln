@@ -13,9 +13,9 @@
     <main class="h-screen w-full bg-slate-50 font-police"> 
 
         <!-- la  navbar -->
-        <nav class="bg-white fixed w-full max-sm:absolute max-sm:top-[93%] max-sm:w-full">
+        <nav class="bg-white fixed w-full max-sm:absolute max-sm:top-[90%] max-sm:rounded-b-3xl max-sm:w-full ">
 
-            <div class="flex px-28 items-center max-sm:px-2">
+            <div class="flex px-28 items-center max-sm:px-2 max-sm:py-4">
                 <div class="flex items-center max-sm:hidden"> 
                     <div class="">
                         <i class='bx bxl-linkedin-square  text-blue-600 text-5xl'></i>
@@ -115,9 +115,9 @@
         <!-- le menu post responsive -->
 
         
-        <section class="hidden max-sm:block absolute h-screen w-full bg-slate-50 opacity-50" id="menupostresp">
+        <section class="hidden absolute h-screen w-full bg-slate-50 transform" id="menupostresp">
 
-            <div class="flex items-center">
+            <div class="flex items-center justify-between p-2">
 
                 <div class="mr-4 " id="closepostrespo">
                     <i class='bx bx-x text-4xl'></i>
@@ -129,13 +129,26 @@
                 </div>
 
                 <div class="">
-
+                    <button class="border p-1 rounded-lg bg-blue-700 text-white" type="button">Publier</button>
                 </div>
 
+                
+            </div>
+            
+            <div class="px-2">
+                <textarea class="bg-slate-50 w-full p-2 rounded-lg focus:outline-none focus:outline-blue-700" rows="10" name="" id="" placeholder="Partagez ton avis"></textarea>
+            </div>
+            
+            <div class="flex justify-end p-2">
+                <button>
+                    <i class='bx bxs-image text-5xl text-blue-700' id="postimage"></i>
+                    <!-- <input type="file" accept="img/*" id="importimage"> -->
+                </button>
+                
             </div>
         </section>
-
-        <!-- la fon menu post reponsive -->
+        
+        <!-- la fin menu post reponsive -->
 
         <section class="absolute left-1/2 top-14 border bg-white shadow rounded-b-lg rounnded-t-lg hidden" id="menuprofille">
             
@@ -370,7 +383,7 @@
 
                 
 
-            <div class="h-[88vh] overflow-y-scroll scrollbar scrollbar-thumb-red-500 scrollbar-none max-sm:w-full max-sm:h-[100vh]">  
+            <div class="h-[88vh] overflow-y-scroll scrollbar scrollbar-thumb-red-500 scrollbar-none max-sm:w-full max-sm:h-[92vh]">  
 
                 <div class="border py-2 px-3 rounded-xl bg-white max-sm:hidden">
                     <div class="flex">

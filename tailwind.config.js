@@ -11,6 +11,8 @@ module.exports = {
         gidlinked:"2fr 4fr 2.5fr",
         gridsm: "1fr"
       },
+
+
     },
   },
   plugins: [require('tailwind-scrollbar')],

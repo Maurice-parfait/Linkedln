@@ -34,6 +34,8 @@ const btnvous = document.getElementById('btnvous');
     const postrespon =document.getElementById("postrespon");
     const closepostrespo = document.getElementById("closepostrespo");
     const menupostresp = document.getElementById("menupostresp");
+    const postimage = document.getElementById("postimage");
+    // const importimage = document.getElementById("importimage");
 
 
     btnimage.addEventListener('click', ()=> {
@@ -47,11 +49,10 @@ const btnvous = document.getElementById('btnvous');
     });
 
     postrespon.addEventListener('click', ()=> {
-
+        menupostresp.style.display = 'block';
+        closepostrespo.addEventListener('click', ()=> {
+            menupostresp.style.display = "none";
+        });
     });
 
-    closepostrespo.addEventListener('click', ()=> {
-        menupostresp.style.display = "none";
-    })
-    
     
