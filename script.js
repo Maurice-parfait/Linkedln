@@ -32,6 +32,8 @@ const btnvous = document.getElementById('btnvous');
     const btnimage = document.getElementById("btnimage");
     const gridgauche = document.getElementById("gridgauche");
     const postrespon =document.getElementById("postrespon");
+    const closepostrespo = document.getElementById("closepostrespo");
+    const menupostresp = document.getElementById("menupostresp");
 
 
     btnimage.addEventListener('click', ()=> {
@@ -47,5 +49,9 @@ const btnvous = document.getElementById('btnvous');
     postrespon.addEventListener('click', ()=> {
 
     });
+
+    closepostrespo.addEventListener('click', ()=> {
+        menupostresp.style.display = "none";
+    })
     
     
