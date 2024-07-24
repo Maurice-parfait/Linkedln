@@ -1216,6 +1216,18 @@ video {
     height: 92vh;
   }
 
+  .max-sm\:h-\[9vh\]{
+    height: 9vh;
+  }
+
+  .max-sm\:h-\[94vh\]{
+    height: 94vh;
+  }
+
+  .max-sm\:h-\[96vh\]{
+    height: 96vh;
+  }
+
   .max-sm\:w-full{
     width: 100%;
   }
