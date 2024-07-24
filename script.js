@@ -6,6 +6,10 @@ const btnpost = document.getElementById('btnpost');
 const menuprofille= document.getElementById('menuprofille');
 const btnvous = document.getElementById('btnvous');
 
+const parg_cacher = document.getElementById("parg_cacher");
+const btn_plus = document.getElementById("btn_plus");
+const btn_moins = document.getElementById("btn_moins");
+
     menuButton.addEventListener('click', () => {
       menu.style.display = 'block';
 
@@ -27,8 +31,22 @@ const btnvous = document.getElementById('btnvous');
         }
     });
 
-    // le script pour  la responsivité 
+    // la partie voir plus 
+    btn_plus.addEventListener('click', ()=>{
+        parg_cacher.style.display = "block";
+        btn_plus.style.display = 'none';
+        btn_moins.style.display = 'block'
 
+        // voir moins
+        btn_moins.addEventListener('click', function() {
+            parg_cacher.style.display = 'none';
+            btn_plus.style.display = 'block';
+            btn_moins.style.display = 'none';
+        });
+    });
+    
+
+    // le script pour  la responsivité 
     const btnimage = document.getElementById("btnimage");
     const gridgauche = document.getElementById("gridgauche");
     const postrespon =document.getElementById("postrespon");
