@@ -387,8 +387,11 @@
 
                 <div class="border py-2 px-3 rounded-xl bg-white max-sm:hidden">
                     <div class="flex">
-                        <img class="h-14 rounded-full " src="Img/profil.jpeg" alt="Profile">
-                        <button id="menu-button" class="border ml-2 rounded-full  w-full">post</button>
+                        <img class="h-12 rounded-full " src="Img/profil.jpeg" alt="Profile">
+                
+                         <div class="w-full border ml-2 cursor-pointer rounded-full flex text-gray-600" id="menu-button">
+                            <button id="" class="ml-2">Commencer un post</button>
+                         </div>
                     </div>
 
                     <div class="mt-2 px-3 flex justify-between">
@@ -432,11 +435,11 @@
                 <!-- *************************************  la partie de publication ****************************-->
                 
                 <!--  le input de recherche pour le max-sm: en haut-->
-                <div class="hidden max-sm:block max-sm:w-full">
+                <div class="hidden max-sm:block max-sm:w-full max-sm:px-2">
 
                     <div class="px-2 flex items-center mb-2">
                         <div class="flex items-center w-1/2">
-                            <img class="h-8 cursor-pointer rounded-full" src="Img/profil.jpeg" id="btnimage" alt="la photo">
+                            <img class="h-12 cursor-pointer rounded-full" src="Img/profil.jpeg" id="btnimage" alt="la photo">
                             <input class="ml-2 border px-4 py-1 w-52 rounded-lg focus:outline-blue-800"  type="search" placeholder="Recherche">
                         </div>
 
@@ -456,25 +459,207 @@
                     <div class="px-4 py-2">
                         <div class="flex">
                             <div class="">
-                                <img class="h-14 rounded-full" src="Img/gedeon.jpeg" alt="">
+                                <img class="h-14 rounded-full" src="Img/profil-elvin.jpg" alt="">
                             </div>
 
                             <div class="ml-2">
-                                <h1>Gedeon Mabengi. <span class="font-light text-sm text-gray-500">Abonné</span></h1>
-                                <h1>----</h1>
+                                <h1>Elvin Kyungu. <span class="font-light text-sm text-gray-500">Abonné</span></h1>
+                                <h1 class="font-light text-gray-400 text-sm"> Front-End Developer | Vuejs</h1>
+                                <h1 class="text-sm font-light text-gray-500">9. minutes. <span><i class='bx bx-globe'></i></span></h1>
+                            </div>
+
+                        </div>
+
+                        <p>Écrire du Code Vue.js Clair et Lisible : La Magie des Composants Propres
+
+                            Un nouvel article que je viens de publié pour les devs Vuejs 
+                        </p>
+                    </div>
+
+                    <!-- pub -->
+                    <div class="px-0 py-4">
+                        
+                        <img src="Img/elvin.jpg" alt="">
+
+                    </div>
+                    <div class="px-4">
+                        <hr>
+                        <div class="flex justify-between pt-4 max-sm:hidden">
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-like text-2xl mr-2'></i>
+                                <p>J'aime</p>
+                            </div>
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-message-rounded-detail text-2xl mr-2'></i>
+                                <p>Commenter</p>
+                            </div>
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-repost text-2xl mr-2'></i>
+                                <p>Republier</p>
+                            </div>
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bxl-telegram text-2xl mr-2'></i>
+                                <p>Envoyer</p>
+                            </div>
+
+                        </div>
+
+                        <!-- reponsive max-sm: j'aime -->
+
+                        <div class="hidden max-sm:block">
+                            <div class="flex justify-between pt-4">
+
+                                <div class="hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-like text-2xl mr-2'></i>
+                                    </div>
+                                    <p>J'aime</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-message-rounded-detail text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Commenter</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-repost text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Republier</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bxl-telegram text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Envoyer</p>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- la partie de publication -->
+                <div class="border rounded-lg bg-white mb-4 pb-4">
+
+                    <div class="px-4 py-2">
+                        <div class="flex">
+                            <div class="">
+                                <img class="h-14 rounded-full" src="Img/vander-profil.jpg" alt="">
+                            </div>
+
+                            <div class="ml-2">
+                                <h1>Vander Otis. <span class="font-light text-sm text-gray-500">Abonné</span></h1>
+                                <h1 class="font-light text-gray-400 text-sm">Web dev | mobil</h1>
                                 <h1 class="text-sm font-light text-gray-500">2. sem. <span><i class='bx bx-globe'></i></span></h1>
                             </div>
 
                         </div>
 
-                        <p>csdsfdghgnbijnkm</p>
+                        <p>Il y a 3 semaines Je viens de signer mon premier client grâce à YouTube, avec seulement un peu plus de 350 abonnés et sans avoir rien vendu dans mes 4 vidéos.
+                        </p>
+
+                        <p class="hidden">
+                            Comme quoi, la création de valeur attire (presque) toujours des gens vers soi.
+                            
+                            Quelques fois pas les bonnes personnes, mais elles en attirent quand-même.
+                            
+                            Pour info, j’ai déjà eu 4 prospects qui m’ont contacté depuis que j’ai repris (un peu plus sérieusement) ma chaine, c'est-à-dire, il y a trois semaines environ :
+                            
+                            - Le premier m’a écrit par e-mail pour un projet web, mais n’a plus donné de réponse jusqu’ici 😕
+                            - Le deuxième veut une collaboration commerciale, donc je teste d’abord sa solution avant d’en parler 
+                            - Le troisième voulait une application mobile, ne pouvait pas payer le tarif 🙃
+                            - Le quatrième a un projet web et mobile intéressant et a le budget, c’est celui avec qui je commence à bosser ce mois-ci 😊
+                            
+                            Tout ça en deux vidéos pur code et deux autres facecam dans lesquelles je donne des conseils aux devs.
+                            
+                            Quelle leçon en tirer ?
+                            Comme je ne cesse de le répéter, montrer votre valeur au monde et le monde vous récompensera forcément.
+                            
+                            Peace ✌🏽
+                        </p>
+
+                        <div class="flex justify-end text-gray-500" >
+                            <button >....plus</button>
+                        </div>
                     </div>
 
                     <!-- pub -->
-                    <div class="px-0">
+                    <div class="px-0 py-4">
                         
-                        <img src="Img/1721467630432.jpeg" alt="">
+                        <img src="Img/vander.jpg" alt="">
 
+                    </div>
+                    <!-- commentaires  -->
+                    <div class="px-4">
+                        <hr>
+                        <div class="flex justify-between pt-4 max-sm:hidden">
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-like text-2xl mr-2'></i>
+                                <p>J'aime</p>
+                            </div>
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-message-rounded-detail text-2xl mr-2'></i>
+                                <p>Commenter</p>
+                            </div>
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-repost text-2xl mr-2'></i>
+                                <p>Republier</p>
+                            </div>
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bxl-telegram text-2xl mr-2'></i>
+                                <p>Envoyer</p>
+                            </div>
+
+                        </div>
+
+                        <!-- reponsive max-sm: j'aime -->
+
+                        <div class="hidden max-sm:block">
+                            <div class="flex justify-between pt-4">
+
+                                <div class="hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-like text-2xl mr-2'></i>
+                                    </div>
+                                    <p>J'aime</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-message-rounded-detail text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Commenter</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-repost text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Republier</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bxl-telegram text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Envoyer</p>
+                                </div>
+    
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -486,70 +671,96 @@
                     <div class="px-4 py-2">
                         <div class="flex">
                             <div class="">
-                                <img class="h-14 rounded-full" src="Img/gedeon.jpeg" alt="">
+                                <img class="h-14 rounded-full" src="Img/ilico profil.jpg" alt="">
                             </div>
 
                             <div class="ml-2">
-                                <h1>Gedeon Mabengi. <span class="font-light text-sm text-gray-500">Abonné</span></h1>
-                                <h1>----</h1>
-                                <h1 class="text-sm font-light text-gray-500">2. sem. <span><i class='bx bx-globe'></i></span></h1>
+                                <h1 class="text-xl ">illicocash</h1>
+                                <h1 class="text-sm font-light text-gray-500">3 684 Abonnés</h1>
+                                <h1 class="text-sm font-light text-gray-500">Post sponsorissé </h1>
                             </div>
 
                         </div>
 
-                        <p>csdsfdghgnbijnkm</p>
+                        <p>Utilisez votre carte virtuelle illico pour tous vos achats en ligne.</p>
                     </div>
 
                     <!-- pub -->
                     <div class="px-0">
                         
-                        <img src="Img/1721467630432.jpeg" alt="">
+                        <img src="Img/post ilico.jpg" alt="">
 
                     </div>
 
-                </div>
+                    <div class="px-4">
+                        <hr>
+                        <div class="flex justify-between pt-4 max-sm:hidden">
 
-
-                <!-- la partie de publication -->
-                <div class="border rounded-lg bg-white mb-4 pb-4">
-
-                    <div class="px-4 py-2">
-                        <div class="flex">
-                            <div class="">
-                                <img class="h-14 rounded-full" src="Img/gedeon.jpeg" alt="">
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-like text-2xl mr-2'></i>
+                                <p>J'aime</p>
                             </div>
 
-                            <div class="ml-2">
-                                <h1>Gedeon Mabengi. <span class="font-light text-sm text-gray-500">Abonné</span></h1>
-                                <h1>----</h1>
-                                <h1 class="text-sm font-light text-gray-500">2. sem. <span><i class='bx bx-globe'></i></span></h1>
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-message-rounded-detail text-2xl mr-2'></i>
+                                <p>Commenter</p>
+                            </div>
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bx-repost text-2xl mr-2'></i>
+                                <p>Republier</p>
+                            </div>
+
+                            <div class="flex items-center hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                <i class='bx bxl-telegram text-2xl mr-2'></i>
+                                <p>Envoyer</p>
                             </div>
 
                         </div>
 
-                        <p>csdsfdghgnbijnkm usriourpjjo  dkhfiodl</p>
+                        <!-- reponsive max-sm: j'aime -->
+
+                        <div class="hidden max-sm:block">
+                            <div class="flex justify-between pt-4">
+
+                                <div class="hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-like text-2xl mr-2'></i>
+                                    </div>
+                                    <p>J'aime</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-message-rounded-detail text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Commenter</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bx-repost text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Republier</p>
+                                </div>
+    
+                                <div class=" hover:bg-gray-300 p-2 rounded-lg text-md cursor-pointer">
+                                    <div class="flex justify-center">
+                                        <i class='bx bxl-telegram text-2xl mr-2'></i>
+                                    </div>
+                                    <p>Envoyer</p>
+                                </div>
+    
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- pub -->
-                    <div class="px-0">
-                        
-                        <img src="Img/1721467630432.jpeg" alt="">
-
-                    </div>
-
+                    
                 </div>
-
-
-
-
-
-
-
 
             </div>
 
 
-            <!-- la collone de gauche -->
+            <!-- la collone de droite -->
             <div class="h-[85vh] max-sm:hidden">
                 <div class="px-3 py-4 border-2  rounded-lg bg-white">
                     <div class="">
